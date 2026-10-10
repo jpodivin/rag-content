@@ -4,8 +4,8 @@
 [metadata]
 groups = ["default", "dev"]
 strategy = ["inherit_metadata"]
-lock_version = "4.5.0"
-content_hash = "sha256:bc2a47d0f1d0983b769e4e310481480f76d42eca00030ffbdc26a610692208a9"
+lock_version = "4.5.1"
+content_hash = "sha256:e41f33c68e9c1b26fe11e6c43dd3c016eee374d2dcc3d9cfd1c43ec9f0d98965"
 
 [[metadata.targets]]
 requires_python = "==3.11.*"
@@ -152,6 +152,17 @@ files = [
 ]
 
 [[package]]
+name = "cfgv"
+version = "3.5.0"
+requires_python = ">=3.10"
+summary = "Validate configuration and produce human readable error messages."
+groups = ["dev"]
+files = [
+    {file = "cfgv-3.5.0-py2.py3-none-any.whl", hash = "sha256:a8dc6b26ad22ff227d2634a65cb388215ce6cc96bbcc5cfde7641ae87e8dacc0"},
+    {file = "cfgv-3.5.0.tar.gz", hash = "sha256:d5b1034354820651caa73ede66a6294d6e95c1b00acc5e9b098e917404669132"},
+]
+
+[[package]]
 name = "charset-normalizer"
 version = "3.3.2"
 requires_python = ">=3.7.0"
@@ -244,6 +255,16 @@ files = [
 ]
 
 [[package]]
+name = "distlib"
+version = "0.4.3"
+summary = "Distribution utilities"
+groups = ["dev"]
+files = [
+    {file = "distlib-0.4.3-py2.py3-none-any.whl", hash = "sha256:4b0ce306c966eb73bc3a7b6abad017c556dadd92c44701562cd528ac7fde4d5b"},
+    {file = "distlib-0.4.3.tar.gz", hash = "sha256:f152097224a0ae24be5a0f6bae1b9359af82133bce63f98a95f86cae1aede9ed"},
+]
+
+[[package]]
 name = "distro"
 version = "1.9.0"
 requires_python = ">=3.6"
@@ -270,18 +291,17 @@ files = [
     {file = "faiss_cpu-1.8.0.post1-cp311-cp311-manylinux_2_17_aarch64.manylinux2014_aarch64.whl", hash = "sha256:8542a87743a7f94ac656fd3e9592ad57e58b04d961ad2fe654a22a8ca59defdb"},
     {file = "faiss_cpu-1.8.0.post1-cp311-cp311-manylinux_2_17_x86_64.manylinux2014_x86_64.whl", hash = "sha256:ed46928de3dc20170b10fec89c54075a11383c2aaf4f119c63e0f6ae5a507d74"},
     {file = "faiss_cpu-1.8.0.post1-cp311-cp311-win_amd64.whl", hash = "sha256:4fa5fc8ea210b919aa469e27d6687e50052db906e7fec3f2257178b1384fa18b"},
-    {file = "faiss_cpu-1.8.0.post1.tar.gz", hash = "sha256:5686af34414678c3d49c4fa8d774df7156e9cb48d7029071e56230e74b01cc13"},
 ]
 
 [[package]]
 name = "filelock"
-version = "3.13.4"
-requires_python = ">=3.8"
+version = "4.1.0"
+requires_python = ">=3.10"
 summary = "A platform independent file lock."
-groups = ["default"]
+groups = ["default", "dev"]
 files = [
-    {file = "filelock-3.13.4-py3-none-any.whl", hash = "sha256:404e5e9253aa60ad457cae1be07c0f0ca90a63931200a47d9b6a6af84fd7b45f"},
-    {file = "filelock-3.13.4.tar.gz", hash = "sha256:d13f466618bfde72bd2c18255e269f72542c6e70e7bac83a0232d6b1cc5c8cf4"},
+    {file = "filelock-4.1.0-py3-none-any.whl", hash = "sha256:2ce9818e3e2d8f284c1a964414447ef148d42a5fd5e2a477a7118e574b293ec1"},
+    {file = "filelock-4.1.0.tar.gz", hash = "sha256:ad7f724afef953e731b1cc39bcd3a09166d72ed7fcdf29e6e88b1c3235c6715d"},
 ]
 
 [[package]]
@@ -422,6 +442,17 @@ dependencies = [
 files = [
     {file = "huggingface_hub-0.23.4-py3-none-any.whl", hash = "sha256:3a0b957aa87150addf0cc7bd71b4d954b78e749850e1e7fb29ebbd2db64ca037"},
     {file = "huggingface_hub-0.23.4.tar.gz", hash = "sha256:35d99016433900e44ae7efe1c209164a5a81dbbcd53a52f99c281dcd7ce22431"},
+]
+
+[[package]]
+name = "identify"
+version = "2.6.20"
+requires_python = ">=3.10"
+summary = "File identification library for Python"
+groups = ["dev"]
+files = [
+    {file = "identify-2.6.20-py2.py3-none-any.whl", hash = "sha256:6a16b69b93187244e0548cbfd25b3e4a6f9a7a2ad784625c3bec2b8d27b81aaa"},
+    {file = "identify-2.6.20.tar.gz", hash = "sha256:ad729860a923858d26917c2f4fb0a1d83d27a75b1e090c06440c573f048f3285"},
 ]
 
 [[package]]
@@ -978,6 +1009,17 @@ files = [
 ]
 
 [[package]]
+name = "nodeenv"
+version = "1.11.0"
+requires_python = "!=3.0.*,!=3.1.*,!=3.2.*,!=3.3.*,!=3.4.*,!=3.5.*,!=3.6.*,>=2.7"
+summary = "Node.js virtual environment builder"
+groups = ["dev"]
+files = [
+    {file = "nodeenv-1.11.0-py2.py3-none-any.whl", hash = "sha256:edaa16e6c14d7cf395d75d4bbd5a26390f4dc06501a33b4e76282b02cc688a25"},
+    {file = "nodeenv-1.11.0.tar.gz", hash = "sha256:3ce8fe5b71d16e8af7039ca65257354100bc772965d6bc549070649e53b1b146"},
+]
+
+[[package]]
 name = "numpy"
 version = "1.26.4"
 requires_python = ">=3.9"
@@ -1019,13 +1061,13 @@ files = [
 
 [[package]]
 name = "packaging"
-version = "23.2"
-requires_python = ">=3.7"
+version = "26.3"
+requires_python = ">=3.9"
 summary = "Core utilities for Python packages"
 groups = ["default", "dev"]
 files = [
-    {file = "packaging-23.2-py3-none-any.whl", hash = "sha256:8c491190033a9af7e1d931d0b5dacc2ef47509b34dd0de67ed209b5203fc88c7"},
-    {file = "packaging-23.2.tar.gz", hash = "sha256:048fb0e9405036518eaaf48a55953c750c11e1a1b68e0dd1a9d62ed0c092cfc5"},
+    {file = "packaging-26.3-py3-none-any.whl", hash = "sha256:d7193f7c8e4e93f444fde0262bf90af30e16fa0ad0ad44cb553c87339b23cd1c"},
+    {file = "packaging-26.3.tar.gz", hash = "sha256:94edc256424af38762eb31306eed28beb9f0efc50a8837492c9d6fd6004aed79"},
 ]
 
 [[package]]
@@ -1087,13 +1129,31 @@ files = [
 
 [[package]]
 name = "platformdirs"
-version = "4.2.1"
-requires_python = ">=3.8"
+version = "4.12.4"
+requires_python = ">=3.10"
 summary = "A small Python package for determining appropriate platform-specific dirs, e.g. a `user data dir`."
 groups = ["dev"]
 files = [
-    {file = "platformdirs-4.2.1-py3-none-any.whl", hash = "sha256:17d5a1161b3fd67b390023cb2d3b026bbd40abde6fdb052dfbd3a29c3ba22ee1"},
-    {file = "platformdirs-4.2.1.tar.gz", hash = "sha256:031cd18d4ec63ec53e82dceaac0417d218a6863f7745dfcc9efe7793b7039bdf"},
+    {file = "platformdirs-4.12.4-py3-none-any.whl", hash = "sha256:78bfb9db2a8471ed7eebe3c3c932da413911042994e699b384fbb4493fa872d7"},
+    {file = "platformdirs-4.12.4.tar.gz", hash = "sha256:63743c02414e755de4e31b8f68125c1407495b86c5a006e203c01ff8b9924250"},
+]
+
+[[package]]
+name = "pre-commit"
+version = "4.0.1"
+requires_python = ">=3.9"
+summary = "A framework for managing and maintaining multi-language pre-commit hooks."
+groups = ["dev"]
+dependencies = [
+    "cfgv>=2.0.0",
+    "identify>=1.0.0",
+    "nodeenv>=0.11.1",
+    "pyyaml>=5.1",
+    "virtualenv>=20.10.0",
+]
+files = [
+    {file = "pre_commit-4.0.1-py2.py3-none-any.whl", hash = "sha256:efde913840816312445dc98787724647c65473daefe420785f885e8ed9a06878"},
+    {file = "pre_commit-4.0.1.tar.gz", hash = "sha256:80905ac375958c0444c65e9cebebd948b3cdb518f335a091a670a89d652139d2"},
 ]
 
 [[package]]
@@ -1168,6 +1228,20 @@ files = [
 ]
 
 [[package]]
+name = "python-discovery"
+version = "1.6.2"
+requires_python = ">=3.9"
+summary = "Python interpreter discovery"
+groups = ["dev"]
+dependencies = [
+    "filelock>=3.16.1",
+]
+files = [
+    {file = "python_discovery-1.6.2-py3-none-any.whl", hash = "sha256:f0c697f95a3aaec4174a6e5e58f5885e25768684bafc76f1afde384709ebdcf2"},
+    {file = "python_discovery-1.6.2.tar.gz", hash = "sha256:cd1738ca1d37c86ef9d0b654dd46fcee1e41c97c6add12575e8501ced39afdb4"},
+]
+
+[[package]]
 name = "pytz"
 version = "2024.1"
 summary = "World timezone definitions, modern and historical"
@@ -1182,7 +1256,7 @@ name = "pyyaml"
 version = "6.0.1"
 requires_python = ">=3.6"
 summary = "YAML parser and emitter for Python"
-groups = ["default"]
+groups = ["default", "dev"]
 files = [
     {file = "PyYAML-6.0.1-cp311-cp311-macosx_10_9_x86_64.whl", hash = "sha256:6965a7bc3cf88e5a1c3bd2e0b5c22f8d677dc88a455344035f03399034eb3007"},
     {file = "PyYAML-6.0.1-cp311-cp311-macosx_11_0_arm64.whl", hash = "sha256:f003ed9ad21d6a4713f0a9b5a7a0a79e08dd0f221aff4525a2be4c346ee60aab"},
@@ -1655,6 +1729,26 @@ groups = ["default", "dev"]
 files = [
     {file = "urllib3-2.2.1-py3-none-any.whl", hash = "sha256:450b20ec296a467077128bff42b73080516e71b56ff59a60a02bef2232c4fa9d"},
     {file = "urllib3-2.2.1.tar.gz", hash = "sha256:d0570876c61ab9e520d776c38acbbb5b05a776d3f9ff98a5c8fd5162a444cf19"},
+]
+
+[[package]]
+name = "virtualenv"
+version = "21.14.6"
+requires_python = ">=3.9"
+summary = "Virtual Python Environment builder"
+groups = ["dev"]
+dependencies = [
+    "distlib<1,>=0.4.3",
+    "filelock<5,>=3.24.2; python_version >= \"3.10\"",
+    "filelock<=3.19.1,>=3.19.1; python_version < \"3.10\"",
+    "packaging>=26.3",
+    "platformdirs<5,>=4.4",
+    "python-discovery>=1.6.1",
+    "typing-extensions>=4.16; python_version < \"3.11\"",
+]
+files = [
+    {file = "virtualenv-21.14.6-py3-none-any.whl", hash = "sha256:eb1a20c5878569b69667f6a1af03458a8512b3afa7be771a2dafe92fdca05bb9"},
+    {file = "virtualenv-21.14.6.tar.gz", hash = "sha256:c6b74616e64bffa9532cfa9dfd54ffbab0dc9b999df2bb8ec0d75e559b983661"},
 ]
 
 [[package]]
